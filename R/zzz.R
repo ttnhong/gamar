@@ -63,7 +63,7 @@ init_gama_jar <- function(path) {
 #' @noRd
 gama_version <- function(path) {
   v_info <- readLines(
-    paste0(path, "/Contents/Eclipse/Configuration/config.ini"))
+    paste0(path,  "/configuration/config.ini"))
   v_info <- v_info[10]
   v_info <- gsub("[[:alpha:]]|=", "", v_info)
   v_info <- as.numeric(v_info)
